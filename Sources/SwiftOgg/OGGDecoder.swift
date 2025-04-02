@@ -116,7 +116,7 @@ public class OGGDecoder {
             }
         }
 
-        if totalLinks == 0 {
+        if totalLinks < 0 {
             NSLog("Does not look like an opus file.")
             throw OpusError.invalidState
         }
